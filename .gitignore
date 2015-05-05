@@ -1,0 +1,6 @@
+node_modules
+!client/node_modules
+.live-archive
+notes.md
+.DS_Store
+data

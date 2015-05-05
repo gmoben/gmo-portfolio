@@ -1,0 +1,65 @@
+@soundcloud: #d35400;
+@github: #913D88;
+@linkedin: #1F3A93;
+@email: #1E824C;
+@default-icon: #000000;
+
+@body-background: #ECF0F1;
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import './icons.css';
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+  opacity: .999999;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  // background-color: @body-background;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.title {
+  font-size: 56px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 16px;
+  text-align: center;
+}
+
+.social-icon a {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 50px;
+  color: @default-icon;
+}
+
+.icon-soundcloud-draw:hover {
+  color: @soundcloud;
+}
+
+.icon-github-draw:hover {
+  color: @github;
+}
+
+.icon-linkedin-draw:hover {
+  color: @linkedin;
+}
+
+.icon-email-draw:hover {
+  color: @email;
+}
