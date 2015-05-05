@@ -16,11 +16,11 @@ gulp.task('clean', 'Clean built files.', function(cb) {
 gulp.task('build', 'Build application.', function() {
 	var build = gulp.src('client/index.jsx')
 		.pipe(webpack( require('./webpack.config.prod.js') ))
-		.pipe(gulp.dest('dist/js'));
+		.pipe(gulp.dest('server/dist/js'));
 
 	var copy = gulp
 		.src(['client/index.html', 'client/styles/*.css'], {base: 'client/'})
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('server/dist'));
 });
 
 gulp.task('dev', 'Run client and server simultaneously.', ['server', 'client']);
@@ -74,6 +74,13 @@ gulp.task('mongo', function() {
 		].join(' '), {
 			cwd: __dirname
 		}));
+});
+
+gulp.task('heroku:push:amend', ['build'], function() {
+	gulp.src('')
+	.pipe(gulpShell('git add --all .'))
+	.pipe(gulpShell('git commit --amend --no-edit'))
+	.pipe(gulpShell('git push heroku master --force'));
 });
 
 gulp.task('server', function(cb) {

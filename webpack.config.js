@@ -10,10 +10,10 @@ module.exports = {
 	},
 	module: {
 		loaders: [{
-			test: /\.woff(2)?(-.{6})?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+			test: /\.woff(2)?(\?-.*)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
 			loader: "url-loader?limit=10000&minetype=application/font-woff"
 		}, {
-			test: /\.(ttf|eot|svg|png)(-.{6})?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+			test: /\.(ttf|eot|svg|png)(\?-.*)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
 			loader: "file-loader"
 		}, {
 			test: /\.js$/,
@@ -22,7 +22,7 @@ module.exports = {
 			exclude: /node_modules/
 		}, {
 			test: /\.jsx$/,
-			loaders: ['imports?React=react', 'react-hot', 'babel']
+			loaders: ['imports?React=react', 'babel']
 		}, {
 			test: /\.css$/,
 			loader: 'style!css'

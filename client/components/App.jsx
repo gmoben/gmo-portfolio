@@ -96,7 +96,7 @@ class App extends React.Component {
       return (
           <StateModifier ref={STATE_MOD_PREFIX + name} key={name}>
             <Modifier options={{origin:[0.5, 0.5]}}>
-              <Surface options={{size: [true, true], classes: ['social-icon']}} ref={ICON_PREFIX + name}>
+              <Surface options={{size: [90, 50], classes: ['social-icon']}} ref={ICON_PREFIX + name}>
                 <a href={params.href} className={params.icon}/>
               </Surface>
             </Modifier>
@@ -117,7 +117,7 @@ class App extends React.Component {
                   </Surface>
                 </Modifier>
 
-                <Modifier options={{align: [0.61, 0.65], origin: [0.5, 0.5]}}>
+                <Modifier options={{align: [0.615, 0.65], origin: [0.5, 0.5]}}>
                   <SequentialLayout options={{direction: 0}} ref='icons'>
                     {icons}
                   </SequentialLayout>
