@@ -16,6 +16,10 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
+app.get('/resume', function(req, res) {
+  res.sendFile(path.join(__dirname, 'resume.pdf'));
+});
+
 app.listen(app.get('port'), function() {
   console.log('Listening on port', app.get('port'));
 });

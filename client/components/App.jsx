@@ -74,6 +74,10 @@ class App extends React.Component {
       //   icon: 'icon-erlenmyer-flask-draw',
       //   href: '#'
       // },
+      'Resume': {
+        icon: 'icon-ingredients',
+        href: '/resume'
+      },
       'Soundcloud': {
         icon: 'icon-soundcloud-draw',
         href: 'https://soundcloud.com/notochord'
@@ -89,7 +93,7 @@ class App extends React.Component {
       'Email': {
         icon: 'icon-email-draw',
         href: 'mailto:ben@warr.io'
-      }
+      },
     };
 
     let icons = _.map(links, (params, name) => {
