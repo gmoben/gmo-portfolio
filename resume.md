@@ -20,9 +20,9 @@ Cross-trained web developer and laboratory scientist.<br>5+ years experience bui
 
 Kennesaw State University
 : *Computer Science (BS)*
-  __2014-2015__
+  __2009-2014__
 : *Biotechnology (BS)*
-  __2014-2015__
+  __2009-2014__
 
 ------
 
